@@ -1,0 +1,94 @@
+/*Ajustes generales aplicados a toda la pagina*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+/*root de colores para poder modificar en el futuro los colores a petición*/
+:root {
+--primary:#7f00b2;
+--secondary:#cc99e0;
+--secondary-light:rgb(173,173,173);
+--dark1:#222222;
+--dark2:#050505;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+    background-color: var(--dark1);
+    color: var(--secondary);
+}
+
+button{
+    margin: 15px;
+}
+
+.login-container{
+    text-align: center;
+    padding: 100px;
+    margin-top: 100px;
+    background-color: var(--dark1);
+    color: var(--secondary);
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+}
+  
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+}
+  
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.25s ease;
+}
+.image-gallery img:hover {
+    transform: scale(1.5);
+}
+.gallery-container h1{
+    text-align: center;
+    padding: 30px;
+}
+
+
+
+
+/* Estilos para el input */
+input[type="password"] {
+    width: 40%;
+    padding: 10px;
+    border: 3px solid #7f00b2;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Estilos para el botón */
+  button {
+    padding: 10px 20px;
+    background-color: #7f00b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #cc99e0; /* Cambia el color al pasar el mouse */
+  }
+  
